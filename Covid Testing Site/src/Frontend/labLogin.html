@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static/css/labLoginStyle.css" />
+  </head>
+
+  <body class="text-center vsc-initialized">
+    <form class="form-signin" action="/login/lab" method="POST">
+      <img
+        class="mb-4"
+        src="static_media/stony-brook-university-logo-horizontal-300.png"
+        alt=""
+        width="80"
+        height="80"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Lab Login</h1>
+      <label for="labID" class="sr-only">labID</label>
+      <input
+        name="labID"
+        id="inputEmail"
+        class="form-control"
+        placeholder="Lab ID"
+        required=""
+        autofocus=""
+      />
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="inputPassword"
+        class="form-control"
+        placeholder="Password"
+        required=""
+      />
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <button
+            class="btn btn-sm btn-primary btn-block"
+            type="submit"
+            name="buttonType"
+            value="lab"
+          >
+            Lab Login
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a
+              class="btn btn-sm btn-primary btn-block"
+              type="submit"
+              href="testCollection.html"
+            >
+              Login Collector
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a
+              class="btn btn-sm btn-primary btn-block"
+              type="submit"
+              href="poolMaping.html"
+            >
+              Lab Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

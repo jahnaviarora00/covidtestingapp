@@ -1,0 +1,1 @@
+DELETE FROM temp WHERE id <> 0
